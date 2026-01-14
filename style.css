@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section:target {
-  background: var(--beige-light);
-}
-
 img {
   display: block;
   max-inline-size: 100%;
@@ -199,14 +195,13 @@ header {
 main {
   width: 90%;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 
 .hero {
   position: relative;
   text-align: center;
   padding: 100px 0px;
-  margin: auto 0;
   max-height: 100vh;
 }
 
@@ -215,20 +210,22 @@ main {
   position: absolute;
   inset: 0;
   background: url('./Resources/images/banner.jpg') no-repeat center/cover;
-  transform: scale(1.1); 
+  transform: scale(1.2); 
   z-index: -1;
 }
 
 
 .hero-content {
   color: var(--white);
-  text-align: center;
+  text-align: left;
   padding-top: 150px;
 }
 
 .hero-content h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: var(--brown-dark);
+  
 }
 
 .hero-content .brand {
