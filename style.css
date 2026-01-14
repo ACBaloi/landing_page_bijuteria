@@ -100,6 +100,14 @@ header {
   border:none
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
 .search-icon {
   position: absolute;
   right: 10px;
@@ -210,7 +218,7 @@ main {
   position: absolute;
   inset: 0;
   background: url('./Resources/images/banner.jpg') no-repeat center/cover;
-  transform: scale(1.2); 
+  transform: scale(1.1); 
   z-index: -1;
 }
 
@@ -228,7 +236,7 @@ main {
   
 }
 
-.hero-content .brand {
+.brand {
   color: var(--brown-dark);
   font-weight: 700;
   text-transform: uppercase;
@@ -276,6 +284,9 @@ main {
 
 .featured-products {
   margin-top: 80px;
+  background-color: var(--beige-dark);
+  padding: 40px 20px;
+  width: 100%;
 }
 
 .featured-products h2 {
@@ -378,12 +389,32 @@ main {
   margin-top: 10px;
 }
 
+.view-all-categories {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--brown-soft);
+  color: var(--white);
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+  background-color: var(--brown-dark);
+}
+
 /* CUSTOM ORDERS SECTION */
 
 .custom-orders {
   margin-top: 80px;
   text-align: left;
   background: url('./Resources/images/custom-orders-bg.jpg') no-repeat center/cover;
+  transform: scale(1.1); 
   padding: 20% 5%;
 }
 
@@ -419,15 +450,42 @@ main {
 
 /* FOOTER */
 
-footer {
-  background-color: var(--brown-dark);
-  color: var(--white);
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 50px;
+footer  {
+  background-color: var(--beige-light);
 }
 
-footer p {
+.footer {
+  padding: 40px 0;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-box {
+  flex: 1;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
   font-size: 0.9rem;
+  color: var(--brown-dark);
+}
+
+
+@media (min-width: 768px) {
+    .footer-boxes {
+        flex-direction: row;
+    }
 }
 

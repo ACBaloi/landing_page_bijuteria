@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loja online Olga – moda, coleções exclusivas e pedidos personalizados.">
-    <title>Olga</title>
+    <meta name="description" content="Loja online Olga – Cosméticos e acessórios, coleções exclusivas e pedidos personalizados.">
+    <title>Olga.</title>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Material Icons-->
@@ -23,13 +23,14 @@
         <div class="header-top">
           <div class="search-bar">
             <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            <label for="search" class="sr-only">Pesquisar</label>
             <input type="text" placeholder="Procura por um item..." class="search-input" />
           </div>
           <h1 class="logo"><a href="./index.html">Olga.</a></h1> 
           <div class="header-icons">
-            <i class="fa-solid fa-circle-user"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-shopping-cart"></i>
+            <i class="fa-solid fa-circle-user" aria-hidden="true"></i>
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
           </div> 
         </div>
 
@@ -45,7 +46,7 @@
             </select>
           </div>
           <div class="header-nav">
-            <nav>
+            <nav aria-label="Navegação principal">
                 <a href="#sobre_nos">Sobre nós</a>
                 <a href="#mais_vendidos">Mais vendidos</a>
                 <a href="#produtos">Produtos</a>
@@ -54,7 +55,7 @@
             </nav>
           </div>
           <div class="contact">
-            <p><i class="fa-solid fa-phone"></i> +258 82 123 4567</p>
+            <p><i class="fa-solid fa-phone"></i> +258 874519005</p>
           </div>
         </div>
     </header>
@@ -79,12 +80,12 @@
                     <h3>Terços</h3>
                 </div>
                 <div class="best-seller-card">
-                    <img src="./Resources/images/pulseiras.jpg" alt="Pulseiras">
-                    <h3>Pulseiras</h3>
+                    <img src="./Resources/images/best-sellers-oil.jpg" alt="Serums">
+                    <h3>Serums</h3>
                 </div>
                 <div class="best-seller-card">
-                    <img src="./Resources/images/pescotes.jpg" alt="Pescotes">
-                    <h3>Pescotes</h3>
+                    <img src="./Resources/images/best-sellers-bijuteria.jpg" alt="Bijuteria">
+                    <h3>Bijuteria</h3>
                 </div>
             </div>
 
@@ -93,22 +94,22 @@
               <h2>Produtos em Destaque</h2>
               <div class="product-grid">
                 <div class="product-card">
-                    <img src="./Resources/images/alca_celular.jpg" alt="colares">
-                    <h3>Produto 1</h3>
+                    <img src="./Resources/images/featured-products-ring.jpg" alt="anéis">
+                    <h3>Anéis</h3>
                     <p>Descrição breve do produto 1.</p>
                     <span class="price">299.99Mt</span>
                     <button class="add-to-cart-button">Adicionar ao carrinho</button>
                 </div>
                 <div class="product-card">
                     <img src="./Resources/images/colares.jpg" alt="colares">
-                    <h3>Produto 2</h3>
+                    <h3>Colares</h3>
                     <p>Descrição breve do produto 2.</p>
                     <span class="price">399.99Mt</span>
                     <button class="add-to-cart-button">Adicionar ao carrinho</button>
                 </div>
                 <div class="product-card">
-                    <img src="./Resources/images/outras.jpg" alt="colares">
-                    <h3>Produto 3</h3>
+                    <img src="./Resources/images/outras.jpg" alt="outras">
+                    <h3>Colares corporais</h3>
                     <p>Descrição breve do produto 3.</p>
                     <span class="price">699.99Mt</span>
                     <button class="add-to-cart-button">Adicionar ao carrinho</button>
@@ -122,29 +123,32 @@
             <h2>Categorias Populares</h2>
             <div class="categories-grid">
                 <div class="category-card">
-                    <img src="./Resources/images/colares.jpg" alt="Categoria 1">
+                    <img src="./Resources/images/colares.jpg" alt="Colares">
                     <h3>Colares</h3>
                 </div>
                 <div class="category-card">
-                    <img src="./Resources/images/pulseiras.jpg" alt="Categoria 2">
-                    <h3>Pulseiras</h3>
+                    <img src="./Resources/images/popular-categories-oil.jpg" alt="Cosméticos">
+                    <h3>Cosméticos</h3>
                 </div>
                 <div class="category-card">
-                    <img src="./Resources/images/pescotes.jpg" alt="Categoria 3">
+                    <img src="./Resources/images/pescotes.jpg" alt="Pescotes">
                     <h3>Pescotes</h3>
                 </div>
                 <div class="category-card">
-                    <img src="./Resources/images/terco.jpg" alt="Categoria 1">
+                    <img src="./Resources/images/terco.jpg" alt="Terços">
                     <h3>Terços</h3>
                 </div>
                 <div class="category-card">
-                    <img src="./Resources/images/alca_celular.jpg" alt="Categoria 2">
-                    <h3>Alça para celular</h3>
+                    <img src="./Resources/images/popular-categories-locao.jpg" alt="Loções">
+                    <h3>Loções</h3>
                 </div>
                 <div class="category-card">
-                    <img src="./Resources/images/outras.jpg" alt="Categoria 3">
-                    <h3>Outras</h3>
+                    <img src="./Resources/images/popular-categories-perfumes.jpg" alt="Perfumes">
+                    <h3>Perfumes</h3>
                 </div>
+            </div>
+            <div class="view-all-categories">
+                <a href="#" class="view-all-button">Ver todas as categorias</a>
             </div>
         </section>
 
@@ -157,7 +161,25 @@
 
     </main>
     <footer>
-        <p>© 2026 Olga. All rights reserved.</p>
+        <div class="footer">
+          <div class="footer-boxes">
+            <div class="footer-box">
+                <h2><span class="brand">Olga.</span></h2>
+                <h4>Cosméticos e acessórios</h4>
+                <p>Presentes para todos os momentos.</p>
+            </div>
+            <address class="footer-box">
+                <h4>Contactos:</h4>
+                <p><a href="mailto:kayaulwazi@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>kayaulwazi@gmail.com</a></p>
+                <p><a href="tel:+258874519005"><i class="fa-solid fa-phone"></i>+258 874519005</a></p>
+                <p>Maputo, Moçambique</p>
+            </address>
+          </div>
+        </div>
+            <div class="copyright">
+              <p class="copy">&copy; 2026 Olga. All rights reserved. </p>
+            </div>
+    
     </footer>
     
 </body>
