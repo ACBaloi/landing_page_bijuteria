@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja online Olga – moda, coleções exclusivas e pedidos personalizados.">
+    <title>Olga</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=favorite" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-top">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            <input type="text" placeholder="Procura por um item..." class="search-input" />
+          </div>
+          <h1 class="logo"><a href="./index.html">Olga.</a></h1> 
+          <div class="header-icons">
+            <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-shopping-cart"></i>
+          </div> 
+        </div>
+
+        <div class="header-bottom">
+          <div class="header-categories">
+            <label for="categories-select">Categorias:</label>
+            <select id="categories-select" name="categories" class="select">
+              <option value="Pulseiras">Pulseiras</option>
+              <option value="Colares">Colares</option>
+              <option value="Terços">Terços</option>
+              <option value="Alça de celular">Alça de celular</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+          <div class="header-nav">
+            <nav>
+                <a href="#sobre_nos">Sobre nós</a>
+                <a href="#mais_vendidos">Mais vendidos</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#colecções">Colecções</a>
+                <a href="#pedidos_personalizados">Pedidos personalizados</a>
+            </nav>
+          </div>
+          <div class="contact">
+            <p><i class="fa-solid fa-phone"></i> +258 82 123 4567</p>
+          </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="sobre_nos">
+            <div class="hero">
+              <div class="hero-content">
+                <h1>Bem-vindo à <span class="brand">Olga.</span></h1>
+                <p>Descubra a nossa coleção exclusiva de bijuteria e faça pedidos personalizados.</p>
+                <a href="#" class="shop-now-button">Compre agora</a>
+              </div>
+            </div>
+        </section>
+
+        <section id="mais_vendidos" class="best-sellers">
+            <h2>Mais Vendidos</h2>
+            <div class="best-sellers-grid">
+                <div class="best-seller-card">
+                    <img src="./Resources/images/terco.jpg" alt="Terços">
+                    <h3>Terços</h3>
+                </div>
+                <div class="best-seller-card">
+                    <img src="./Resources/images/pulseiras.jpg" alt="Pulseiras">
+                    <h3>Pulseiras</h3>
+                </div>
+                <div class="best-seller-card">
+                    <img src="./Resources/images/pescotes.jpg" alt="Pescotes">
+                    <h3>Pescotes</h3>
+                </div>
+            </div>
+
+
+          <div class="featured-products">
+              <h2>Produtos em Destaque</h2>
+              <div class="product-grid">
+                <div class="product-card">
+                    <img src="./Resources/images/alca_celular.jpg" alt="colares">
+                    <h3>Produto 1</h3>
+                    <p>Descrição breve do produto 1.</p>
+                    <span class="price">299.99Mt</span>
+                    <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="./Resources/images/colares.jpg" alt="colares">
+                    <h3>Produto 2</h3>
+                    <p>Descrição breve do produto 2.</p>
+                    <span class="price">399.99Mt</span>
+                    <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                </div>
+                <div class="product-card">
+                    <img src="./Resources/images/outras.jpg" alt="colares">
+                    <h3>Produto 3</h3>
+                    <p>Descrição breve do produto 3.</p>
+                    <span class="price">699.99Mt</span>
+                    <button class="add-to-cart-button">Adicionar ao carrinho</button>
+                </div>
+              </div>
+          </div>
+        </section>
+
+    
+<!--        <section class="popular-categorires">
+            <h2>Categorias Populares</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="./Resources/images/colares.jpg" alt="Categoria 1">
+                    <h3>Colares</h3>
+                </div>
+                <div class="category-card">
+                    <img src="./Resources/images/pulseiras.jpg" alt="Categoria 2">
+                    <h3>Pulseiras</h3>
+                </div>
+                <div class="category-card">
+                    <img src="./Resources/images/pescotes.jpg" alt="Categoria 3">
+                    <h3>Pescotes</h3>
+                </div>
+                <div class="category-card">
+                    <img src="./Resources/images/tercos.jpg" alt="Categoria 1">
+                    <h3>Terços</h3>
+                </div>
+                <div class="category-card">
+                    <img src="./Resources/images/alca_celular.jpg" alt="Categoria 2">
+                    <h3>Alça para celular</h3>
+                </div>
+                <div class="category-card">
+                    <img src="./Resources/images/outras.jpg" alt="Categoria 3">
+                    <h3>Outras</h3>
+                </div>
+            </div>
+        </section>
+
+    -->
+
+        <section id="pedidos_personalizados" class="custom-orders">
+            <h2>Pedidos Personalizados</h2>
+            <p>Tem uma ideia única em mente? Entre em contacto connosco para criar peças personalizadas que refletem o seu estilo pessoal.</p>
+            <a href="#" class="contact-us-button">Contacte-nos</a>
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2026 Olga. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
